@@ -349,19 +349,19 @@ args = parser.parse_args()
 
 # cfg
 config_file = "config_model/UniPose_SwinT.py"  # change the path of the model config file
-checkpoint_path = "./unipose_swint.pth"  # change the path of the model
+checkpoint_path = "config_model/UniPose_MPII.pth"  # change the path of the model
 # load model
 model = load_model(config_file, checkpoint_path, cpu_only=False)
 
 if __name__ == "__main__":
-MARKDOWN = \
-"""
-## UniPose: Detecting Any Keypoints
+# MARKDOWN = \
+# """
+# ## UniPose: Detecting Any Keypoints
 
-[GitHub](https://github.com/IDEA-Research/UniPose) | [Paper](http://arxiv.org/abs/2310.08530) | [Project Page](https://yangjie-cv.github.io/UniPose/)
+# [GitHub](https://github.com/IDEA-Research/UniPose) | [Paper](http://arxiv.org/abs/2310.08530) | [Project Page](https://yangjie-cv.github.io/UniPose/)
 
-If UniPose is helpful for you, please help star the GitHub Repo. Thanks!
-"""
+# If UniPose is helpful for you, please help star the GitHub Repo. Thanks!
+# """
     block = gr.Blocks().queue()
     with block:
         with gr.Row():
